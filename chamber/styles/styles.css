@@ -1,0 +1,25 @@
+body { font-family: system-ui, Arial, sans-serif; margin:0; padding:0; background:#f7f7f7; color:#111; }
+header, footer { background:#fff; padding:1rem; }
+main { padding:1rem; }
+
+.controls { display:flex; gap:0.5rem; align-items:center; margin-bottom:1rem; flex-wrap:wrap; }
+.view-toggle button { padding:0.5rem 0.75rem; border:1px solid #ccc; background:#eee; cursor:pointer; }
+.view-toggle button[aria-pressed="true"] { background:#ddd; outline:2px solid #888; }
+
+.members-grid { display:grid; grid-template-columns: 1fr; gap:1rem; }
+
+.member-card { display:flex; gap:0.75rem; background:#fff; padding:0.75rem; border-radius:6px; align-items:center; border:1px solid #ddd; }
+.member-card img { width:80px; height:80px; object-fit:cover; border-radius:6px; }
+
+.member-card.gold { box-shadow: 0 0 0 3px rgba(212,175,55,0.12); }
+.member-card.silver { box-shadow: 0 0 0 3px rgba(192,192,192,0.12); }
+
+.members-grid.list-view { display:block; }
+.members-grid.list-view .member-card { display:flex; width:100%; }
+
+@media (min-width: 720px) {
+  .members-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px) {
+  .members-grid { grid-template-columns: repeat(3, 1fr); }
+}

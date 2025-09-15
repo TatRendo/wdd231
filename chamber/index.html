@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> WDD 231: Web Frontend Development 1 - Tatiana Rendon Rodriguez </title>
+        <meta name="description" content="Learn more about me, Tatiana Rendon, and my background, explore my projects and assignments from the Web Frontend Development 1, ee the skills and knowledge I have acquired throughout this course, including HTML, CSS, JavaScript, and more. Follow my progress and insights as I advance through the Web Fundamentals curriculum at BYU."/>
+        <meta name="author" content="Tatiana Rendon"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+        <!-- CSS:mobile -->
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script defer src="scripts/navigation.js"></script>
+        <script defer src="scripts/date.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>WDD 231: Web Frontend Development 1 - <span class="highlight">Tatiana Rendon Rodriguez</span></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Chamber Project</a>
+                <a href="#">Final Project</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="card">
+                <h1>Home</h1>
+                <h2>About Me</h2>
+                <div class="content">
+                    <p>I am a BYU student andI am excited to be able to learn to program in different programming languages.
+                        I am someone who values responsibility in all areas of my life. In the workplace, I dedicate myself to fulfilling 
+                        tasks with diligence and efficiency, always seeking ways to positively contribute to the team.
+                    </p>
+                    <h2>Student Photo</h2>                   
+                        <img src="images/photo.jpeg" alt="Student Photo" width="160"/>
+                    <br>
+                </div> 
+            </section>
+
+            <section class="course">
+                <h2>Web Certificate Courses</h2>
+
+                <div class="filter-buttons">
+                    <button data-filter="all" class="filter-btn" aria-pressed="true">All</button>
+                    <button data-filter="WDD" class="filter-btn" aria-pressed="false">WDD</button>
+                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">CSE</button>
+                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">WDD130</button>
+                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">WDD131</button>
+                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">WDD231</button>
+                </div>
+
+                <div class="credits">
+                    <p>Total credits displayed: <span id="totalCredits">00000</span></p>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://github.com/TatRendo" target="_blank" rel="TatRendo">GitHub</a>
+                <a href="https://www.linkedin.com/in/tatiana-rendon-rodr%C3%ADguez-22b181216/?locale=en_US" target="_blank" rel="perfil">LinkedIn</a>
+                <a href="https://www.instagram.com/tatiana_rendonr/" target="_blank" rel="perfil">Instagram</a>
+            </div>
+
+            <p>&copy; <span id="currentyear"></span> 🍁 Tatiana Rendon Rodriguez 🍁 Colombia</p>
+            <p id="lastModified"></p>
+        </footer>
+
+    </body>
+</html>

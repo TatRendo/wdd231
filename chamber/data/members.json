@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Farmatodo",
+    "address": "Carrera 11a#98-50, Bogotá",
+    "phone": "+57 1 1111111",
+    "website": "https://www.farmatodo.com.co/",
+    "image": "farmatodo.jpg",
+    "membership": 3,
+    "category": "Pharmacy",
+    "email": "contactenos@farmatodo.com"
+  },
+  {
+    "name": "Pasteur",
+    "address": "Carrera 15 #45-12, Bogotá",
+    "phone": "+57 1 2222222",
+    "website": "https://www.farmaciaspasteur.com.co/",
+    "image": "pasteur.jpg",
+    "membership": 2,
+    "category": "pharmacy",
+    "email": "contact@pasteur.com"
+  },
+  {
+    "name": "locatel",
+    "address": "Av. 68 #80-30, Bogotá",
+    "phone": "+57 1 3333333",
+    "website": "https://www.locatelcolombia.com/",
+    "image": "locatel.jpg",
+    "membership": 1,
+    "category": "Distributor",
+    "email": "serviciocliente@locatelcolombia.com"
+  },
+  {
+    "name": "Colsubsidio",
+    "address": "Calle 26 N.º 25 - 50, Bogotá",
+    "phone": "+57 1 4444444",
+    "website": "https://www.colsubsidio.com",
+    "image": "colsubsidio.jpg",
+    "membership": 2,
+    "category": "Drugstore",
+    "email": "servicioalcliente@colsubsidio.com"
+  },
+  {
+    "name": "Cafam",
+    "address": "Sede: Av 68 # 90-88, Bogotá",
+    "phone": "+57 1 5555555",
+    "website": "https://www.cafam.com.co/",
+    "image": "cafam.jpg",
+    "membership": 3,
+    "category": "Laboratory",
+    "email": "info@cafam.com.co"
+  },
+  {
+    "name": "Farmalisto",
+    "address": "Virtual, Bogotá",
+    "phone": "+57 1 6666666",
+    "website": "https://www.farmalisto.com.co/",
+    "image": "farmalisto.jpg",
+    "membership": 1,
+    "category": "Pharmacy",
+    "email": "informacion@galenica.co"
+  },
+  {
+    "name": "Cruz Verde",
+    "address": "Calle 80 #70-25, Bogotá",
+    "phone": "+57 1 7777777",
+    "website": "https://www.cruzverde.com.co/",
+    "image": "scruzverde.jpg",
+    "membership": 2,
+    "category": "Drugstore",
+    "email": "info@cruzverde.com"
+  }
+]
