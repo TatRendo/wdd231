@@ -1,28 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pharmacy and Drugstore Network of Bogota — Directory</title>
+  <title>Pharmacy and Drugstore Network of Bogotá — Directory</title>
   <meta name="description" content="Business directory of the Pharmacy and Drugstore Network of Bogotá." />
   <meta name="author" content="Tatiana Rendon" />
 
   <!-- favicon -->
-  <link rel="icon" href="images/farmacia.jpg" sizes="32x32" type="image/png">
+  <link rel="icon" href="images/farmacia.jpg" sizes="32x32" type="image/png" />
 
   <!-- Facebook / Open Graph -->
-  <meta property="og:title" content="Pharmacy and Drugstore Network of Bogota - Directory" />
+  <meta property="og:title" content="Pharmacy and Drugstore Network of Bogotá - Directory" />
   <meta property="og:description" content="Directory of pharmacies, drugstores, and distributors in Bogotá." />
   <meta property="og:image" content="https://your-github-username.github.io/wdd231/chamber/images/titfarmacias.png" />
   <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html" />
   <meta property="og:type" content="website" />
 
-
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/small.css" />
   <link rel="stylesheet" href="styles/larger.css" />
 
-  <script defer src="scripts/directory.js"></script>
+  <script defer src="scripts/members.js"></script>
   <script defer src="scripts/date.js"></script>
 </head>
 
@@ -30,7 +29,7 @@
   <header>
     <div class="brand">
       <img src="images/farmlogo.png" alt="Site logo" class="logo" />
-      <span class="site-name">Pharmacy and Drugstore Network of Bogota</span>
+      <span class="site-name">Pharmacy and Drugstore Network of Bogotá</span>
     </div>
     <button id="menuButton" class="menu-button" aria-controls="mainNav" aria-expanded="false">☰</button>
   </header>
@@ -46,9 +45,19 @@
   <main>
     <h1>Member Directory</h1>
 
-    <div class="view-buttons">
-      <button id="gridView">Grid View</button>
-      <button id="listView">List View</button>
+    <div class="controls">
+      <div class="view-buttons">
+        <button id="viewGrid" aria-pressed="true">Grid View</button>
+        <button id="viewList" aria-pressed="false">List View</button>
+      </div>
+
+      <label for="membershipFilter">Filter by Membership:</label>
+      <select id="membershipFilter">
+        <option value="all">All</option>
+        <option value="3">Gold</option>
+        <option value="2">Silver</option>
+        <option value="1">Member</option>
+      </select>
     </div>
 
     <div id="membersContainer" class="grid-view"></div>
@@ -58,6 +67,7 @@
     <p>Contact: Pharmacy and Drugstore Network of Bogotá — Phone: +57 1 111 1111</p>
     <p>Web Frontend Development 1 • WDD 231</p>
     <p>&copy; <span id="currentyear"></span> 🍁 Tatiana Rendon Rodriguez 🍁 Colombia</p>
+    <p id="lastModified"></p>
   </footer>
 </body>
 </html>

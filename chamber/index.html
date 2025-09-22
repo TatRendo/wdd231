@@ -3,64 +3,70 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> WDD 231: Web Frontend Development 1 - Tatiana Rendon Rodriguez </title>
+        <title>Chamber of Commerce - Tatiana Rendon Rodriguez</title>
         <meta name="description" content="Learn more about me, Tatiana Rendon, and my background, explore my projects and assignments from the Web Frontend Development 1, ee the skills and knowledge I have acquired throughout this course, including HTML, CSS, JavaScript, and more. Follow my progress and insights as I advance through the Web Fundamentals curriculum at BYU."/>
-        <meta name="author" content="Tatiana Rendon"/>
+        <meta name="author" content="Tatiana Rendon Rodriguez"/>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
-        <!-- CSS:mobile -->
+        <!-- CSS:🤳-->
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/normalize.css">
 
         <script defer src="scripts/navigation.js"></script>
         <script defer src="scripts/date.js"></script>
+        <script defer src="scripts/weather.js"></script> <!-- no tiene nada AUN -->
+        <script defer src="scripts/members.js"></script>
     </head>
 
     <body>
 
         <header>
             <h1>WDD 231: Web Frontend Development 1 - <span class="highlight">Tatiana Rendon Rodriguez</span></h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#">Chamber Project</a>
+            <nav role="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="directory.html">Directory</a>
                 <a href="#">Final Project</a>
             </nav>
         </header>
 
         <main>
-
-            <section class="card">
-                <h1>Home</h1>
-                <h2>About Me</h2>
-                <div class="content">
-                    <p>I am a BYU student andI am excited to be able to learn to program in different programming languages.
-                        I am someone who values responsibility in all areas of my life. In the workplace, I dedicate myself to fulfilling 
-                        tasks with diligence and efficiency, always seeking ways to positively contribute to the team.
-                    </p>
-                    <h2>Student Photo</h2>                   
-                        <img src="images/photo.jpeg" alt="Student Photo" width="160"/>
+            <section class="hero">
+                <div class="hero-container">                  
+                        <img src="images/bogota.jpg" alt="Panoramic view of Bogotá"/>
+                        <a class="cta" href="#">Join the Chamber</a>
                     <br>
                 </div> 
             </section>
 
-            <section class="course">
-                <h2>Web Certificate Courses</h2>
+            <!--events🏟️-->
 
-                <div class="filter-buttons">
-                    <button data-filter="all" class="filter-btn" aria-pressed="true">All</button>
-                    <button data-filter="WDD" class="filter-btn" aria-pressed="false">WDD</button>
-                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">CSE</button>
-                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">WDD130</button>
-                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">WDD131</button>
-                    <button data-filter="CSE" class="filter-btn" aria-pressed="false">WDD231</button>
-                </div>
+            <section class="events">
+                <h2>Current Events</h2>
 
-                <div class="credits">
-                    <p>Total credits displayed: <span id="totalCredits">00000</span></p>
-                </div>
+                <ul>
+                    <li><time datetime="2025-09-25">📅 Business Networking Night – Sept 25</time></li>
+                    <li><time datetime="2025-10-05">📅 Startup Pitch Contest – Oct 5</time></li>
+                </ul>
+            </section>
 
+            <!--weather 🌤️-->
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <p>Temperature: <span id="temp" aria-live="polite"></span>°C</p>
+                <p>Conditions: <span id="desc" aria-live="polite"></span></p>
+                <h3>3-Day Forecast</h3>
+                <ul id="forecast" role="list"></ul>
+            </section>
+
+            <!--spotlights-->
+
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container" class="grid" role="list"></div>
             </section>
         </main>
 
@@ -74,6 +80,6 @@
             <p>&copy; <span id="currentyear"></span> 🍁 Tatiana Rendon Rodriguez 🍁 Colombia</p>
             <p id="lastModified"></p>
         </footer>
-
+        
     </body>
 </html>

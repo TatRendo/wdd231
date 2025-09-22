@@ -18,8 +18,9 @@ function membershipBadge(level) {
 
 function renderMembers(members, view = 'grid') {
   const container = document.getElementById('membersContainer');
-  container.innerHTML = '';
+  if (!container) return;
 
+  container.innerHTML = '';
   container.classList.toggle('list-view', view === 'list');
 
   if (members.length === 0) {
@@ -48,6 +49,8 @@ function setupViewButtons() {
   const gridBtn = document.getElementById('viewGrid');
   const listBtn = document.getElementById('viewList');
 
+  if (!gridBtn || !listBtn) return;
+
   gridBtn.addEventListener('click', () => {
     gridBtn.setAttribute('aria-pressed', 'true');
     listBtn.setAttribute('aria-pressed', 'false');
@@ -63,6 +66,7 @@ function setupViewButtons() {
 
 document.addEventListener('DOMContentLoaded', async () => {
   setupViewButtons();
+
   const members = await getMembers();
   window._membersData = members;
   renderMembers(members, 'grid');
@@ -71,8 +75,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (levelSelect) {
     levelSelect.addEventListener('change', (e) => {
       const val = e.target.value;
-      const filtered = val === 'all' ? window._membersData : window._membersData.filter(m => String(m.membership) === val);
-      renderMembers(filtered, document.getElementById('viewList').getAttribute('aria-pressed') === 'true' ? 'list' : 'grid');
+      const filtered = val === 'all'
+        ? window._membersData
+        : window._membersData.filter(m => String(m.membership) === val);
+      const currentView = document.getElementById('viewList')?.getAttribute('aria-pressed') === 'true' ? 'list' : 'grid';
+      renderMembers(filtered, currentView);
     });
   }
 });
