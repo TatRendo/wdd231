@@ -15,7 +15,7 @@ async function getWeather() {
     const data = await response.json();
 
     if (!data.main || !data.weather) {
-      throw new Error("Datos incompletos en la respuesta");
+      throw new Error("Incomplete data in the response");
     }
 
     document.querySelector("#temp").textContent = data.main.temp.toFixed(1);
@@ -23,13 +23,13 @@ async function getWeather() {
 
     const forecast = document.querySelector("#forecast");
     forecast.innerHTML = `
-      <li>Humedad: ${data.main.humidity}%</li>
-      <li>Amanecer: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</li>
-      <li>Atardecer: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</li>
+      <li>Humidity: ${data.main.humidity}%</li>
+      <li>Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</li>
+      <li>Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</li>
     `;
   } catch (error) {
-    console.error("Error al obtener el clima:", error);
-    document.querySelector("#forecast").innerHTML = "<li>No se pudo cargar el pronóstico.</li>";
+    console.error("Error getting weather:", error);
+    document.querySelector("#forecast").innerHTML = "<li>The forecast could not be loaded..</li>";
   }
 }
 
