@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Love | Adoption Form</title>
+  <link rel="stylesheet" href="styles/styles-join.css" />
+  <link rel="stylesheet" href="styles/styles-join-weather.css" />
+</head>
+
+<body>
+  <header>
+    <img src="images/logopetlove.png" alt="Logo pet love" class="logo" />
+    <h1>Pet Love</h1>
+
+    <section class="weather-box">
+      <h2>Weather in Bogotá</h2>
+      <p><strong>Temperature:</strong> <span id="temp">--</span>°C</p>
+      <p><strong>Condition:</strong> <span id="desc">--</span></p>
+      <ul id="forecast">
+        <li>Loading forecast...</li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    <section class="mission-vision">
+      <h2>Mission</h2>
+      <p>Connecting hearts with paws, offering every pet a second chance at love and a home.</p>
+      <h2>Vision</h2>
+      <p>Build a world where every animal is valued, protected, and loved as part of a family.</p>
+    </section>
+
+    <form method="get" action="thankyou.html">
+      <label>
+        Name:
+        <input type="text" name="fname" title="Name" autocomplete="given-name" required />
+      </label>
+
+      <label>
+        Lastname:
+        <input type="text" name="lname" title="Lastname" autocomplete="family-name" required />
+      </label>
+
+      <label>
+        Role in the family:
+        <input type="text" name="role" title="Role in the family" autocomplete="organization-title"
+          pattern="[A-Za-z\s\-]{7,}" required />
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Email" autocomplete="email" required
+          placeholder="tatisrendon3@gmail.com" />
+      </label>
+
+      <label>
+        Phone:
+        <input type="tel" name="phone" title="Phone" autocomplete="tel" required />
+      </label>
+
+      <label>
+        Name of home/shelter:
+        <input type="text" name="organization" title="Name of the home" autocomplete="organization" required />
+      </label>
+
+      <label>
+        Level of adoption:
+        <select name="membership" title="Level of adoption">
+          <option value="Temporary">Temporary</option>
+          <option value="Permanent">Permanent</option>
+          <option value="Urgent">Urgent</option>
+          <option value="Sponsorship">Sponsorship</option>
+        </select>
+      </label>
+
+      <label>
+        Home description:
+        <textarea name="description" title="Home description"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp" />
+      <input type="submit" value="Submit request" />
+    </form>
+
+    <section class="cards">
+      <div class="card" id="card1">
+        <h3>Temporary</h3>
+        <a href="#modal1">See benefits</a>
+      </div>
+      <div class="card" id="card2">
+        <h3>Permanent</h3>
+        <a href="#modal2">See benefits</a>
+      </div>
+      <div class="card" id="card3">
+        <h3>Urgent</h3>
+        <a href="#modal3">See benefits</a>
+      </div>
+      <div class="card" id="card4">
+        <h3>Sponsorship</h3>
+        <a href="#modal4">See benefits</a>
+      </div>
+    </section>
+
+    <section class="featured-pets">
+      <h2>Meet our stars</h2>
+      <div class="pet-card">
+        <img src="images/luna.jpg" alt="Luna" class="img" />
+        <h3>Luna</h3>
+        <p>A sweet little dog looking for a loving home.</p>
+      </div>
+      <div class="pet-card">
+        <img src="images/beru.jpg" alt="Beru" class="img" />
+        <h3>Beru</h3>
+        <p>A loyal companion who is ready for new adventures.</p>
+      </div>
+    </section>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <p>Limited-time adoption. Includes follow-up and special events..</p>
+        <a href="#">Close</a>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <p>Forever home. Includes event discounts and recognition..</p>
+        <a href="#">Close</a>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <p>Urgent adoption. Priority selection and veterinary support..</p>
+        <a href="#">Close</a>
+      </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <p>Sponsor without adopting. Includes newsletters and campaign participation.</p>
+        <a href="#">Close</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pet Love | All rights reserved</p>
+  </footer>
+
+  <script src="scripts/script-join.js"></script>
+  <script src="scripts/script-join-weather.js"></script>
+
+</body>
+
+</html>
