@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Monserrate",
+    "address": "Carrera 2 Este #21-48, Bogotá",
+    "description": "An iconic mountain sanctuary offering panoramic views of the city and a historic church at the summit.",
+    "image": "images/monserrate.webp"
+  },
+  {
+    "name": "La Candelaria",
+    "address": "Historic Center, Bogotá",
+    "description": "A colonial neighborhood filled with museums, cafes, colorful architecture, and vibrant street art.",
+    "image": "images/candelaria.webp"
+  },
+  {
+    "name": "Gold Museum",
+    "address": "Cra. 6 #15-88, Bogotá",
+    "description": "One of the most important museums in Latin America, showcasing pre-Columbian gold artifacts and indigenous history.",
+    "image": "images/museo-oro.webp"
+  },
+  {
+    "name": "Botanical Garden",
+    "address": "Av. 63 #68-95, Bogotá",
+    "description": "A peaceful garden featuring native Colombian plants, greenhouses, and educational exhibits.",
+    "image": "images/jardin.webp"
+  },
+  {
+    "name": "Bolívar Square",
+    "address": "Cra. 7 #11-10, Bogotá",
+    "description": "Bogotá’s main square surrounded by historic buildings including the Capitol, Cathedral, and City Hall.",
+    "image": "images/plaza-bolivar.webp"
+  },
+  {
+    "name": "National Museum",
+    "address": "Cra. 7 #28-66, Bogotá",
+    "description": "Colombia’s oldest museum, housing collections of art, history, and archaeology.",
+    "image": "images/museo-nacional.webp"
+  },
+  {
+    "name": "Colpatria Tower",
+    "address": "Cra. 7 #24-89, Bogotá",
+    "description": "The tallest building in Bogotá, featuring an observation deck and colorful nighttime light displays.",
+    "image": "images/colpatria.webp"
+  },
+  {
+    "name": "Usaquén Market",
+    "address": "Calle 119B #6-07, Bogotá",
+    "description": "A lively artisan market offering handmade crafts, street food, and live music every weekend.",
+    "image": "images/usaquen.webp"
+  }
+]
